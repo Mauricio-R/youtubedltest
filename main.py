@@ -1,7 +1,7 @@
 import youtube_dl
 from enum import Enum
 
-input1 = input()
+urlinput = input()
 
 class YLFormat(Enum):
     m4a = '140'  # audio only
@@ -24,8 +24,8 @@ def download(url: str, options: dict):
         ydl.download([url])
 
 
-download_list = [  # edit this
-    (input1, YLFormat.mp4_640_360, YLFormat.mp4_1280_720, ...),
+download_list = [
+    (urlinput, YLFormat.mp4_640_360, YLFormat.mp4_1280_720, ...),
 ]
 
 for cur_data in download_list:
