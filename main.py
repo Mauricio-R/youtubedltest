@@ -1,6 +1,7 @@
 import youtube_dl
 from enum import Enum
 
+print(f'Video URL: ')
 urlinput = input()
 
 class YLFormat(Enum):
